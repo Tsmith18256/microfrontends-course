@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import { faker } from '@faker-js/faker';
+
+  let products = '';
+
+  for (let i = 0; i < 3; i++) {
+    const name = faker.commerce.productName();
+
+    products += `<div>${name}</div>`;
+  }
+
+  console.log(products);
+</script>
+
+<div>{products}</div>
