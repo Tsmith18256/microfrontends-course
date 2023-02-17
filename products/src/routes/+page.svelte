@@ -12,4 +12,4 @@
   console.log(products);
 </script>
 
-<div>{products}</div>
+<div>{@html products}</div>
